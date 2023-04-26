@@ -11,7 +11,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *current, *temp, *next, *prev;
 
 	/* for empty list or list with single node */
-	if (!(*list) || !list || !(*list)->next)
+	if (!list)
 		return;
 
 	current = (*list)->next;
