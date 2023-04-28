@@ -29,6 +29,9 @@ void shell_sort(int *array, size_t size)
 	int i;
 	size_t j, interval, gap;
 
+	if (!array)
+		return;
+
 	/* generate Knuth sequence */
 	interval = 1;
 	while (interval <= size / 3)
